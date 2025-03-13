@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Translator</h1>
+        <textarea id="text" placeholder="Enter text"></textarea>
+
+        <select id="sourceLang">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+        </select>
+
+        <select id="targetLang">
+            <option value="es">Spanish</option>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+        </select>
+
+        <button onclick="translateText()">Translate</button>
+
+        <p id="result"></p>
+        <button onclick="copyToClipboard()">Copy</button>
+        <p id="pronunciation"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
